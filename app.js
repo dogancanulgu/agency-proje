@@ -6,6 +6,8 @@ const port = 3000;
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+mongoose.connect('mongodb://localhost/agency-db');
+
 // middlewares
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
